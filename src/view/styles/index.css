@@ -1,0 +1,132 @@
+:root {
+    --light-bg: antiquewhite;
+    --light-color: black;
+
+    --dark-bg: #18191f;
+    --dark-topbar: #282b3a;
+    --dark-input: #20222d;
+    --dark-disabled: #28282b;
+    --dark-section: #22263b;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+body::-webkit-scrollbar {
+    visibility: hidden;
+    width: 0;
+}
+
+#action-btns {
+    position: absolute;
+    right: 0;
+    align-content: center;
+}
+
+#action-btns > button {
+    cursor: pointer;
+    padding: 8px;
+}
+
+#status-text {
+    margin: auto;
+}
+
+#main {
+    height: 100%;
+    width: 80%;
+    margin: auto;
+}
+
+#header-section {
+    text-align: center;
+    justify-content: center;
+}
+
+#header-section > * {
+    margin: 4px;
+}
+
+.section {
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.package-list-item {
+    margin: 2px;
+}
+
+.package-list-item > h4 {
+    margin: 2px;
+}
+
+select,
+input,
+button {
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 4px;
+    font-size: medium;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="text"] {
+    cursor: text;
+}
+
+#topbar {
+    padding: 6px;
+    text-align: center;
+    -webkit-app-region: drag;
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: var(--light-bg);
+        color: var(--light-color);
+    }
+
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: var(--dark-bg);
+        color: white;
+    }
+
+    #topbar {
+        background-color: var(--dark-topbar);
+    }
+
+    select,
+    input,
+    button {
+        background-color: var(--dark-input);
+        color: white;
+        border: 1px solid black;
+    }
+
+    button:disabled {
+        background-color: var(--dark-disabled);
+        cursor: not-allowed;
+        color: gray;
+    }
+
+    .section {
+        background-color: var(--dark-section);
+    }
+}

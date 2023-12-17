@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./styles/index.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div id="topbar">
+        <span style="justify-content: center;" class="flex">
+            <p>Arcane</p>
+        </span>
+    </div>
+    <p id="status-text"></p>
+    <div id="main">
+        <div class="section" id="header-section">
+            <h1>Installed packages</h1>
+            <div style="text-align: center;">
+                <form>
+                    <select id="package-manager-selection">
+                        <option default value="0">Select package manager</option>
+                    </select>
+                </form>
+                <form>
+                    <input id="packages-search" type="text" placeholder="Search" required></input>
+                    <!--<button>🔎</button>-->
+                </form>
+            </div>
+            <div style="width: 100%; display: inline-block;">
+                <button id="refresh-btn">Refresh</button>
+                <button>Add Package 📦</button>
+                <button id="open-settings-btn">Settings ⚙️</button>
+            </div>
+        </div>
+        <div class="section" id="page-navigation-section">
+            <p id="current-page-label">Page number</p>
+            <button id="prev-page-btn">Previous Page</button>
+            <button id="next-page-btn">Next Page</button>
+        </div>
+        <div class="section" id="packages-section">
+            <p>No content to show. Try reloading, or waiting for the content to appear.</p>
+            <!--
+            <div>
+                <div class="package-list-item">
+                    <h2>{name} - {version}</h2>
+                    <div class="flex">
+                        <button>Upgrade</button>
+                        <button>Delete</button>
+                    </div>
+                </div>
+            </div>
+        -->
+        </div>
+    </div>
+</body>
+<!--<script src="./scripts/titlebar.js"></script>-->
+<script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/packagesView.js" type="module"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./styles/index.css" rel="stylesheet">
+    </link>
+</head>
+
+<body>
+    <div id="main">
+        <div class="section" id="header-section">
+            <h1>Settings</h1>
+
+            <label>Have a settings configuration which you would like to import? Upload the valid JSON file here.</label>
+            <input id="settings-file-import" type="file" accept="application/json"></input>
+
+            <button id="settings-file-export">Export this configuration.</button>
+            <button id="settings-save">Save settings</button>
+        </div>
+        <div class="section">
+            <p>Developed by Travis Luke (@compscitwilight) (c) 2023 under the GNU General License</p>
+            <a href="https://twitter.com/compscitwilight">Twitter</a>
+            <a href="https://github.com/compscitwilight">Github</a>
+        </div>
+        <div class="section">
+            <form class="settings-form" id="general-settings">
+                <h2>General</h2>
+                <label for="setting-show-summaries">Show package summaries</label>
+                <input id="setting-show-summaries" type="checkbox" name="showSummaries"></input>
+            </form>
+        </div>
+        <div class="section">
+            <form class="settings-form" id="appearance-settings">
+                <h2>Appearance</h2>
+                <label for="setting-theme">Theme</label>
+                <select name="themeOverride" id="setting-theme">
+                    <option value="system">System</option>
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </select>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script defer src="./scripts/settings/forms.js" type="module"></script>
+
+</html>

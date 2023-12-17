@@ -1,0 +1,14 @@
+```
+Welcome to the source tree of ArcaneExplorer, a GUI based package manager interface for the most popular Linux dstributions. ArcaneExplorer acts as a visual interface between the user and their package manager of choice, and is package manager agnostic, meaning that it only cares about your package manager of choice and not the distribution which you are using.
+
+To get started, build the project using the ./build.sh script. Please make sure that your system has Node and NPM installed. The build script will transpile the TypeScript within the src directory, and you can then execute the program using the start script located in package.json.
+
+For a step by step explanation:
+* sh ./build.sh - Transpiling the TypeScript
+* npm run start
+That's all there is to it.
+
+If you're interested in creating an executable binary, then find the correct platform specific script located in package.json for compiling, then execute it the same way you would run the development build.
+
+
+```

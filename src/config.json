@@ -1,0 +1,17 @@
+{
+    "useDefault": true,
+    "externalConfig": "",
+    "packageManagers": [
+        {
+            "_id": 1,
+            "name": "DNF",
+            "service": "/services/dnf.js",
+            "distribution": "fedora"
+        },
+        {
+            "_id": 2,
+            "name": "Flatpak",
+            "service": "/services/flatpak.js"
+        }
+    ]
+}
